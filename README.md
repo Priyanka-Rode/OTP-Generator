@@ -62,48 +62,10 @@ otp-generator/
 Sensitive information like **email credentials and SMS API keys** are stored in  
 `application.properties`, which is ignored using `.gitignore`.
 
-POST /api/otp/send 
+ 
+## POST /api/otp/send
 ```json
 {
   "email": "user@example.com",
   "mobile": "9876543210"
 }
-
-Verify OTP
-POST /api/otp/verify
-
-{
-  "email": "user@example.com",
-  "otp": "123456"
-}
-
-How to Run the Project
-
-Clone the repository
-
-Create application.properties from example file
-
-Add your Email & SMS credentials
-
-Run:
-
-mvn spring-boot:run
-
-🎯 Use Cases
-
-User authentication
-
-Password reset
-
-Email/Mobile verification
-
-Secure login systems
-
-👩‍💻 Author
-
-Priyanka Rode
-Java Full Stack Developer
-
-📜 License
-
-This project is for learning and educational purposes.
