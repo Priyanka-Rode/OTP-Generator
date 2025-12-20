@@ -30,32 +30,17 @@ The application generates a time-bound OTP and sends it to users via **Email (SM
 ---
 
 ## 📁 Project Structure
-otp-generator/
-│
-├── pom.xml
-├── README.md
-│
-└── src/main/java/com/example/otp/
-    │
-    ├── OtpGeneratorApplication.java
-    │
-    ├── controller/
-    │   └── OtpController.java
-    │
-    ├── service/
-    │   ├── OtpService.java
-    │   ├── EmailService.java
-    │   └── SmsService.java
-    │
-    ├── dto/
-    │   └── OtpRequestDto.java
-    │
-    ├── util/
-    │   └── OtpUtil.java
-    │
-    └── exception/
-        └── OtpException.java
-
+otp-generator
+┣ src/main/java/com/example/otp_generator
+┃ ┣ Controller
+┃ ┣ Service
+┃ ┣ DTO
+┃ ┣ Util
+┃ ┗ Exception
+┣ src/main/resources
+┃ ┣ application.properties (ignored)
+┃ ┗ application.properties.example
+┗ pom.xml
 ---
 
 ## 🔑 Configuration
@@ -118,4 +103,3 @@ Java Full Stack Developer
 This project is for learning and educational purposes.
 
 ```
-
