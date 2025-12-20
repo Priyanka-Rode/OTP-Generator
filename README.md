@@ -69,3 +69,53 @@ Sensitive information like **email credentials and SMS API keys** are stored in
   "email": "user@example.com",
   "mobile": "9876543210"
 }
+
+
+````
+
+### Verify OTP
+
+```
+POST /api/otp/verify
+```
+
+```json
+{
+  "email": "user@example.com",
+  "otp": "123456"
+}
+```
+
+## ▶️ How to Run the Project
+
+1. Clone the repository
+2. Create `application.properties` from example file
+3. Add your Email & SMS credentials
+4. Run:
+
+```
+mvn spring-boot:run
+```
+
+## 🎯 Use Cases
+
+* User authentication
+* Password reset
+* Email/Mobile verification
+* Secure login systems
+
+---
+
+## 👩‍💻 Author
+
+**Priyanka Rode**
+Java Full Stack Developer
+
+---
+
+## 📜 License
+
+This project is for learning and educational purposes.
+
+```
+
